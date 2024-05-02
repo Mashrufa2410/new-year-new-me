@@ -1,0 +1,85 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header Styles */
+header {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 150px;
+    background-image: url(/images/banner/banner3.png);
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header Content Styles */
+.header-stuff {
+    padding-left: 800px;
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 250px;
+}
+
+/* Banner Title Styles */
+.banner-title {
+    font-weight: bold;
+    font-size: 70px;
+    color: #ffffff;
+    padding-right: 10px;
+    gap: 20px;
+}
+
+/* Banner Paragraph Styles */
+.banner-p, .section-p {
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    color: blue;
+    background-color: #ffffff;
+    padding: 15px 35px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+/* Year Content Styles */
+.year-stuff {
+    display: flex;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* Section Title Styles */
+.section-title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000; /* Change color for better readability */
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Section Paragraph Styles */
+.section-p {
+    color: #757575;
+}
+.section-list {
+    position: relative; /* Make the <p> tag relative for absolute positioning of pseudo-element */
+}
+
+.section-p::before {
+    content: "✓"; /* Content of the pseudo-element */
+    position: absolute; /* Position it absolutely within the <p> tag */
+    left: -20px; /* Adjust the position to be behind the text */
+    color: rgb(0, 107, 0); /* Make the tick mark green */
+}
+
