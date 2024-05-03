@@ -99,6 +99,9 @@ main {
     padding-left: 5px;
     padding-top: 50px;
 }
+.titles{
+    text-align:center ;
+}
 
 .plans-content ul {
     display: flex;
