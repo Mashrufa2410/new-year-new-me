@@ -16,8 +16,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+main {
+    padding: 20px;
+}
 
-/* Header Content Styles */
+
 .header-stuff {
     padding-left: 800px;
     text-align: right;
@@ -25,7 +28,7 @@ header {
     padding-top: 250px;
 }
 
-/* Banner Title Styles */
+
 .banner-title{
     font-weight: bold;
     font-size: 70px;
@@ -34,16 +37,13 @@ header {
     gap: 20px;
 }
 
-/* Banner Paragraph Styles */
+
 .banner-p, .section-p, .footer-p{
     color: #ffffff;
     padding-bottom: 10px;
 }
 
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
+
 
 /* Year Content Styles */
 .year-stuff {
@@ -58,16 +58,8 @@ main {
     margin-top: 70px;
 }
 
-/* Section Title Styles */
-.section-title, .section-sub-title {
-    font-weight: bold;
-    font-size: 40px;
-    color: #000;
-    padding-right: 10px;
-    margin-bottom: 10px;
-}
 
-/* Section Paragraph Styles */
+
 .section-p {
     color: #757575;
 }
@@ -83,7 +75,24 @@ main {
     color: #16D887;
 }
 
-/* Plans Section Styles */
+
+.plan-title{
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    
+}
+
+.item{
+    align-items: center;
+    list-style: none;
+}
+
+.section-sub-title {
+    font-weight: bold;
+    color: #000;
+    padding: 10px 0;
+}
 .plans {
     display: flex;
     margin-top: 50px;
@@ -95,6 +104,7 @@ main {
     display: flex;
     gap: 70px;
     padding: 0px 100px;
+    margin:  0 250px;
 }
 
 .plans-content ul li {
@@ -127,7 +137,6 @@ main {
     color: #005FAC;
     background-color: #ffffff;
     padding: 15px 35px;
-    border: 2px solid #ffffff;
     border-radius: 5px;
     font-weight: 900;
     margin-top: 20px;
@@ -157,17 +166,17 @@ main {
 }
 
 .footer-form input[type="submit"] {
-    color: #005FAC;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #0000ff;
+    padding: 20px 60px;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.footer-form input[type="submit"]:hover {
-    background-color: #005FAC;
+.form-item{
+    background-color: #000;
+    border-color: #ffffff;
     color: #ffffff;
 }
