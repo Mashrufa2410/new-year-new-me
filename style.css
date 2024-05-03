@@ -26,7 +26,7 @@ header {
 }
 
 /* Banner Title Styles */
-.banner-title {
+.banner-title{
     font-weight: bold;
     font-size: 70px;
     color: #ffffff;
@@ -35,35 +35,34 @@ header {
 }
 
 /* Banner Paragraph Styles */
-.banner-p, .section-p {
+.banner-p, .section-p, .footer-p{
     color: #ffffff;
     padding-bottom: 10px;
 }
 
-/* Primary Button Styles */
-.btn-primary {
-    color: blue;
-    background-color: #ffffff;
-    padding: 15px 35px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    font-weight: 900;
+/* Main Content Styles */
+main {
+    padding: 20px;
 }
 
 /* Year Content Styles */
 .year-stuff {
     display: flex;
-    margin-top: 250px;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     gap: 200px;
 }
 
+.year-titles {
+    margin-top: 70px;
+}
+
 /* Section Title Styles */
-.section-title {
+.section-title, .section-sub-title {
     font-weight: bold;
     font-size: 40px;
-    color: #000; /* Change color for better readability */
+    color: #000;
     padding-right: 10px;
     margin-bottom: 10px;
 }
@@ -72,14 +71,103 @@ header {
 .section-p {
     color: #757575;
 }
+
 .section-list {
-    position: relative; /* Make the <p> tag relative for absolute positioning of pseudo-element */
+    position: relative;
 }
 
 .section-p::before {
-    content: "✓"; /* Content of the pseudo-element */
-    position: absolute; /* Position it absolutely within the <p> tag */
-    left: -20px; /* Adjust the position to be behind the text */
-    color: rgb(0, 107, 0); /* Make the tick mark green */
+    content: "✓";
+    position: absolute;
+    left: -20px;
+    color: #16D887;
 }
 
+/* Plans Section Styles */
+.plans {
+    display: flex;
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-top: 50px;
+}
+
+.plans-content ul {
+    display: flex;
+    gap: 70px;
+    padding: 0px 100px;
+}
+
+.plans-content ul li {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Positive Stuff Styles */
+.positive-stuff {
+    width: 1000px;
+    height: 150px;
+    margin-left: 300px;
+    padding: 100px;
+    border-radius: 20px;
+    background: url('/images/gradient1.png') center center no-repeat, url('/images/watch.png') center center no-repeat;
+    background-size: cover; 
+}
+
+.positive-title, .footer-title{
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    padding-right: 10px;
+    gap: 20px;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    color: #005FAC;
+    background-color: #ffffff;
+    padding: 15px 35px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.footer-stuff{
+    display: flex;
+    gap: 200px;
+    background-color: #000;
+    height: 300px;
+    padding-left: 500px;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+
+.footer-form {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.footer-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.footer-form input[type="submit"] {
+    color: #005FAC;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-form input[type="submit"]:hover {
+    background-color: #005FAC;
+    color: #ffffff;
+}
